@@ -17,7 +17,8 @@ function getFinalPrice(length, age, price){
 }
 
 
-getInfo.addEventListener("click", function() {
+getInfo.addEventListener("submit", function() {
+    event.preventDefault();
     let tripLengthValue= tripLength.value;
     let userAgeValue = userAge.value;
     let finalPrice=getFinalPrice(tripLengthValue, userAgeValue, pricePerKm);
