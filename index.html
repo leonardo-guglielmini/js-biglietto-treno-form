@@ -16,14 +16,18 @@
                 <!-- <input type="text" id="trip-length" class="w-50"/> -->
                 <!-- <input type="text" id="user-age" class="w-50"/> -->
                 <!-- <button id="get-info" class="w-25">CONFERMA</button> -->
-                <div class="bg-light-subtle py-4 rounded">
+                <div class="bg-light-subtle py-4 mb-4 rounded">
                     <form action="" id="get-info">
                         <div class="d-flex justify-content-around flex-wrap">
-                            <label class="w-50 text-center">
+                            <label class="w-auto text-center">
+                                <p class="text-danger fw-bold">Nominativo</p>
+                                <input type="text" id="user-name" class="rounded border-danger"/>
+                            </label>
+                            <label class="w-auto text-center">
                                 <p class="text-danger fw-bold">Lunghezza della tratta</p>
                                 <input type="text" id="trip-length" class="rounded border-danger"/>
                             </label>
-                            <label class="w-50 text-center">
+                            <label class="w-auto text-center">
                                 <p class="text-danger fw-bold">Età del passeggero</p>
                                 <input type="text" id="user-age" class="rounded border-danger"/>
                             </label>
@@ -32,14 +36,17 @@
                         <button class="d-block mx-auto my-4 rounded border-danger w-25 fw-bold fs-5">Conferma</button>
                         
                     </form>
+                    
+                </div>
+                
+                <h1 class="w-100 text-center py-4 text-light text-uppercase fs-1">Dati inseriti</h1>
+                <div class="bg-light-subtle py-4 rounded">
+                    <table class="table text-center" id="user-info-table">
+                    </table>
                 </div>
             </section>   
         </div>
-        
     </main>
-
-    
-
 
     <script src="./app.js"></script>
     
